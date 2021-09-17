@@ -1,0 +1,47 @@
+{
+  "name": "lambda-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/api/v1/index.js",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karaarora/lambda-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karaarora/lambda-be/issues"
+  },
+  "homepage": "https://github.com/karaarora/lambda-be#readme",
+  "dependencies": {
+    "@azure/storage-blob": "^12.7.0",
+    "azure-storage": "^2.10.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "eslint-plugin-import": "^2.24.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.7",
+    "parse-multipart": "^1.0.4",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "sinon": "^11.1.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12"
+  }
+}
