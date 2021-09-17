@@ -1,0 +1,98 @@
+listings
+
+GET /listings - [PAGINATION] -> Search by heading, 
+
+sort = [
+    recommended
+    oldest
+    latest
+    liked
+    viewed
+]
+
+filter = [
+    PUBLISHED
+]
+
+
+
+//////////////////////////////////////////////////////////
+
+GET /info
+
+GET /login -> 
+
+GET /download [memeid]
+
+Posts
+
+POST /like -> [id, user, action = LIKE, DISLIKE]
+
+Studio
+
+
+
+
+Users
+
+[
+    name,
+    email,
+    photo
+]
+
+Memes
+
+[
+    meme_id,
+    heading,
+    user_id,
+    thumbnail_url,
+    image_url,
+    view_count: [set],
+    type: [TEMPLATE, FINAL]
+    template_id,
+    state: JSON
+    status: [PUBLISHED, SAVED]
+]
+
+// 
+Likes 
+
+[
+    like_id
+    meme_id
+    user_id
+]
+
+
+//Update EGDS tokens on Apps
+
+/////////////////////
+
+
+{
+    listings: 
+        [
+            {
+            post_id,
+            title,
+            user_name
+            like_state
+            url_s
+        },
+        {
+            post_id,
+            title,
+            user_name
+            like_state
+            url_s
+        }
+    ],
+    filters: [
+        {
+            heading,
+            key
+        }
+    ]
+}
